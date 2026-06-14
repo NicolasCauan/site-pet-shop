@@ -1,13 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patinhas Felizes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="imagens/icon.ico" type="image/x-icon">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1></h1>
+  <div class="hero">
+    <header class="header">
+      <div class="logo">
+        <img src="imagens/logo.png" alt="Logo" width="225px">
+      </div>
+      <nav>
+        <ul class="menus">
+          <li>
+            <a href="">Início</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="inicio" class="sectionInicio">
+      <div class="conteudoInicio">
+        <h1 class="tituloInicio">Tudo Para Seu Melhor Amigo</h1>
+        <p>Cada pet tem uma personalidade única, e merece atenção especial em cada detalhe. Nosso espaço foi criado para oferecer produtos de qualidade, serviços de cuidado e um atendimento pensado para o bem-estar dos animais e a tranquilidade de seus tutores. </p>
+        <p>Mais do que um pet shop, somos um lugar onde o amor pelos animais está presente em cada escolha, proporcionando experiências positivas para pets de todos os portes e idades. </p>
+      </div>
+  </div>
+  </section>
+  </div>
+  <main class="main">
+    <section id="sobre" class="sectionSobre">
+      <div class="conteudoSobre">
+        <div class="textoSobre">
+          <h1>Quem Somos?</h1>
+          <p>
+            Fundado em 2026 por Nicolas Nardelli, nosso pet shop nasceu do amor de
+            uma família pelos animais e do desejo de oferecer um atendimento diferenciado
+            para os pets de Timbó e região.
+          </p>
+          <p>
+            Acreditamos que os animais de estimação são muito mais do que companheiros:
+            eles fazem parte da família. Por isso, trabalhamos diariamente para proporcionar cuidado,
+            carinho e bem-estar em cada atendimento, sempre com dedicação, responsabilidade e respeito.
+          </p>
+          <p>
+            Nossa missão é oferecer produtos e serviços de qualidade que contribuam para a saúde,
+            a felicidade e a qualidade de vida dos pets. Contamos com uma equipe comprometida
+            e apaixonada pelo que faz, pronta para receber cada cliente de forma acolhedora e personalizada.
+          </p>
+          <p>
+            Mais do que um pet shop, queremos ser um lugar de confiança para tutores que buscam
+            o melhor para seus companheiros de quatro patas.
+          </p>
+          <p class="fraseLaranja">
+            Seja bem-vindo à nossa família. Será um prazer cuidar do seu melhor amigo!
+          </p>
+        </div>
+        <div>
+          <img src="imagens/fachada.png" alt="Fachada da loja" class="imagemFachada">
+        </div>
+      </div>
+    </section>
+    <section id="servicos" class="sectionServicos">
+      <h1>Serviços</h1>
+      <div class="containerCards">
+        <div class="card">
+          <img src="imagens/banho-tosa.png" alt="Banho e tosa" width="100%">
+          <h2>Banho e Tosa</h2>
+          <p>
+            O bem-estar do seu pet começa com os cuidados de higiene. Nosso serviço
+            de banho e tosa é realizado com carinho, atenção e produtos de qualidade, proporcionando conforto, limpeza
+            e saúde para cães e gatos. Contamos com profissionais capacitados que respeitam as características e necessidades de cada
+            animal.
+          </p>
+        </div>
+        <div class="card">
+          <img src="imagens/atendimento-veterinario.png" alt="Atendimento Veterinario" width="100%">
+          <h2>Atendimento Veterinário</h2>
+          <p>
+            A saúde do seu pet é a nossa prioridade. Oferecemos atendimento veterinário
+            dedicado, focado na prevenção, diagnóstico e acompanhamento da saúde dos animais.
+            Trabalhamos com responsabilidade e carinho para proporcionar um atendimento humanizado,
+            buscando sempre o melhor para cada paciente.
+          </p>
+        </div>
+        <div class="card">
+          <img src="imagens/day-care-pret.png" alt="DayCare" width="100%">
+          <h2>DayCare</h2>
+          <p>
+            Nosso DayCare foi criado para proporcionar diversão, socialização e
+            atividades supervisionadas durante todo o dia. Em um ambiente seguro,
+            confortável e preparado para receber os pets, eles podem brincar, gastar
+            energia e interagir com outros animais enquanto seus tutores cumprem
+            seus compromissos com tranquilidade.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="sectionContato">
+      <h1>Contato</h1>
+      <p class="pContato">Preencha suas informações para entrarmos em contato:</p>
+      <form action="" id="form" name="form" class="cardContato">
+        <div class="campo">
+          <label for="nome">Nome completo: </label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo">
+          <label for="nomePet">Nome do(a) Pet: </label>
+          <input type="text" id="nomePet" name="nomePet" required>
+        </div>
+        <div class="campo">
+          <label for="especie">Especie do(a) Pet:</label>
+          <select name="especie" id="especie" required>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="passaro">Pássaro</option>
+            <option value="roedor">Roedores</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="motivoContato">Motivo do contato:</label>
+          <select name="motivoContato" id="motivoContato" required>
+            <option value="Banho e Tosa">Banho & Tosa</option>
+            <option value="Veterinario">Atendimento Veterinário</option>
+            <option value="DayCare">DayCare/Creche</option>
+          </select>
+        </div>
+        <input onclick="cadastrarLead()" type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p>&copy; Todos os direitos reservados. 2026 </p>
+  </footer>
 </body>
+
 </html>

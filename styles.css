@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #016572;
+  font-size: 16px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url('imagens/background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  margin: 0 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.menus a {
+  text-decoration: none;
+}
+
+.menus a:hover {
+  color: #f8861d;
+}
+
+.header,
+.rodape {
+  background-color: rgb(217, 245, 241);
+}
+
+.menus {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  color: #059fb2;
+  font-family: "Gorditas", serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.sectionInicio {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.sectionSobre {
+  padding-top: 100px;
+}
+
+.sectionServicos {
+  padding-top: 100px;
+}
+
+.sectionContato {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.tituloInicio {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.conteudoInicio {
+  max-width: 600px;
+}
+
+.conteudoSobre {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.textoSobre{
+  width: 80%;
+}
+
+.fraseLaranja {
+  color: #f8861d;
+}
+
+.imagemFachada {
+  width: 100%; 
+  border-radius: 20px;
+  margin: auto;
+}
+
+.containerCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgb(217, 245, 241);
+  padding: 20px;
+  border-radius: 20px;
+  color: #016572;
+  flex: 1;
+}
+
+.card img {
+ height: 250px;
+}
+
+.cardContato {
+  background-color: #fab06b;
+  padding: 20px;
+  border-radius: 20px;
+  color: #016572;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  justify-self: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo input {
+  height: 30px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #059fb2;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 45px;
+  width: 150px;
+  align-self: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #048a9a;
+  transform: translateY(-2px);
+}
+
+select {
+  height: 35px !important;
+  padding: 2px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.pContato {
+  margin-top: -30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rodape {
+  padding: 0 10%;
+}
